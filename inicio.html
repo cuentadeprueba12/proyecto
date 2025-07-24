@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+	<title>Face Style</title>
+	<link rel="shortcut icon" type="image/x-icon" href="multimedia/favicon.png" >
+<link rel="stylesheet" type="text/css" href="css/inicial.css">
+<meta charset="utf-8">
+<style>
+	#audio{
+		visibility: hidden;
+	}
+</style>
+</head>
+<body background="multimedia/fondo.jpeg" onclick="playAudio()">
+	<header id="menu">
+		<center>
+		<nav id="nav">
+		<ul>
+<li><a href="file:///D:/Proyecto_Cristell/fregistro.html" target="_blank">Registrarse</a></li>
+<li><a href="mailto:bapx071226mmczrmb5@soycecytem.mx">Contactar</a></li>
+<li><a href="D:\Proyecto_Cristell\documentacion.docx">Documentacion</a></li>
+<li><a href="D:\Proyecto_Cristell\presentacion_de_Cristell.pptx"  target="_blank">Presentacion del proyecto</a></li>
+		</ul>
+	</nav>
+</center>
+</header>
+	<center>
+		<br><br>
+<font face="Brush Script MT" size="4">
+	<h1>Descubra</h1>
+</font>
+<font face="Luminari" size="5" >
+<h1>Face Style</h1>
+</font>
+<font face="Monospace" size="5" >
+	<p>¡Un blog para cuidar su piel!</p>
+	<br><br>
+	<button onclick="location.href='file:///D:/Proyecto_Cristell/index.html'" >Comenzar</button>
+</font>
+</center>
+<audio id="audio" src="multimedia/intro.mp3" autoplay controls loop>Su navegador no soporta el audio.</audio>
+	<script>
+		function playAudio(){
+			document.getElementById('audio').play();
+		}
+	</script>
+</body>
+</html>

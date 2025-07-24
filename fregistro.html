@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+	<title>Registro</title>
+	<link rel="shortcut icon" type="image/x-icon" href="multimedia/favicon.png">
+<meta charset="utf-8">
+</head>
+<body bgcolor="#BFF7DC">
+	<center>
+		<font size="4" color="black" face="Georgia"><h1>Formulario de Registro</h1></font>
+		<font size="2" color="black" face="Helvetica"><p>Ingrese sus datos en los campos o seleccione<br>la opcion que se adecue a usted.</p></font>
+	<form action="conexiones/demoformulario.php"  method="post" name="usuarios">
+		<font size="3" color="black" face="Helvetica">
+		<label for="Nombre">Nombre(s)</label>
+		<input type="text" placeholder="Escriba su nombre" maxlength="18" name="Nombre" id="Nombre">
+		<br> <br>
+		<label for="Apellidos">Apellidos</label>
+		<input type="text" placeholder="Escriba sus apellidos" maxlength="18" name="Apellidos" id="Apellidos">
+		<br> <br>
+		<label for="Correo">Correo Electronico</label>
+<input type="email"  placeholder="Escriba su correo" maxlength="30" name="Correo" id="Correo" >
+<br><br>
+<label for="Telefono">Telefono</label>
+<input type="text"  placeholder="Escriba su numero" maxlength="12" name="Telefono" id="Telefono" >
+<br><br>
+<label for="Genero">Genero</label>
+<input type="text"  placeholder="Escriba su genero" maxlength="6" name="Genero" id="Genero" >
+<br><br>
+	<label for="Pais">Pais</label>
+<input type="text"  placeholder="Escriba su pais de origen" maxlength="20" name="Pais" id="Pais" >
+	<br> <br>
+	<label for="Direccion">Domicilio</label>
+<input type="text"  placeholder="Escriba su direccion" maxlength="70" name="Direccion" id="Direccion" >
+<br><br>
+<label for="CP">Codigo Postal</label>
+<input type="text"  placeholder="Escriba su codigo postal" maxlength="10" name="CP" id="CP" >
+<br><br>
+<label for="FC">Cumpleaños</label>
+<input type="text"  placeholder="Escriba su fecha de nacimiento" maxlength="10" name="FC" id="FC" >
+<br><br>
+<label for="RS">Instagram/Facebook</label>
+<input type="text"  placeholder="Escriba su red social(usuario)" maxlength="18" name="RS" id="RS" >
+<br><br>
+	<label for="Edad">Edad</label>
+	<input type="text" id="Edad" maxlength="2" placeholder="Escriba su edad en numeros">
+	<br><br>
+	<input type="submit" id="Registrar"value="Registrar" onclick="alerta()">
+	<script>
+	let mensaje=document.getElementById('Registrar');
+	function alerta(){
+	alert("Sus datos han sido registrados con exito");
+}
+	</script>
+    <input type="reset" name="Borrar">
+</font>
+	</form>
+</center>
+</body>
+</html>

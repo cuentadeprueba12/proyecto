@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+	<title>Opinion</title>
+	<link rel="shortcut icon" type="image/x-icon" href="multimedia/favicon.png">
+<meta charset="utf-8">
+<style>
+	textarea{
+		width: 400px;
+		height: 150px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid black;
+		border-radius: 4px;
+		background-color: seashell;
+		font-size: 18px;
+		resize: none;
+	}
+</style>
+</head>
+<body bgcolor="#BFF7DC">
+	<center>
+		<font size="4" color="black" face="Georgia"><h1>Formulario de Opinion</h1></font>
+		<font size="2" color="black" face="Helvetica"><p>De manera sincera escriba su opinion sobre esta pagina web.</p></font>
+	<form action="conexiones/demoformulario1.php"  method="post" name="coments"> 
+		<font size="3" color="black" face="Helvetica">
+		<label for="cal1">Del 1 al 10 ¿Que tan informativa es esta pagina web?</label>
+		<input type="text" placeholder="Escriba solo numeros" maxlength="2" name="cal1" id="cal1">
+	<br> <br>
+<label for="cal2">Del 1 al 10 ¿Que tan llamativa es esta pagina web?</label>
+		<input type="text" placeholder="Escriba solo numeros" maxlength="2" name="cal2" id="cal2">
+	<br> <br>
+	<label for="cal3">Del 1 al 10 ¿Que tan util es esta pagina web?</label>
+		<input type="text" placeholder="Escriba solo numeros" maxlength="2" name="cal3" id="cal3">
+	<br> <br>	
+	<label for="cal4">Del 1 al 10 ¿Cuanto considera que la informacion proporcionada es entendible?</label>
+		<input type="text" placeholder="Escriba solo numeros" maxlength="2" name="cal4" id="cal4">
+	<br> <br>
+	<p>Escriba su opinion sobre este trabajo:</p>
+	<textarea name="op1" id="op1">.....</textarea>
+	<br><br><br>
+	<p>Escriba sus sugerencias o comentarios sobre este trabajo:</p>
+	<textarea name="op2" id="op2">.....</textarea>
+	<br><br>
+	<input type="submit" id="Enviar"value="Enviar" onclick="mensaje()">
+	<script>
+	let not=document.getElementById('Enviar');
+	function mensaje(){
+	alert("Gracias por sus sugerencias");
+}
+	</script>
+	<br><br>
+    <input type="reset" name="Borrar">
+</font>
+	</form>
+</center>
+</body>
+</html>
